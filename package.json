@@ -1,0 +1,38 @@
+{
+  "name": "refrain-autoprefixer",
+  "version": "0.0.1",
+  "description": "autoprefixer with refrain.",
+  "keywords": [
+    "refrain",
+    "refrainplugin",
+    "autoprefixer"
+  ],
+  "homepage": "https://github.com/shootaroo/refrain-autoprefixer",
+  "bugs": "https://github.com/shootaroo/refrain-autoprefixer/issues",
+  "license": "MIT",
+  "author": "shootaroo <shotaro.tsubouchi@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shootaroo/refrain-autoprefixer.git"
+  },
+  "directories": {
+    "test": "test/"
+  },
+  "scripts": {
+    "test": "jscs *.js test/*.js; jshint *.js test/*.js; mocha --require intelli-espower-loader",
+    "precommit": "npm test",
+    "prepush": "npm test"
+  },
+  "dependencies": {
+    "autoprefixer-core": "^4.0.1"
+  },
+  "devDependencies": {
+    "espower-loader": "^0.10.0",
+    "husky": "^0.6.2",
+    "intelli-espower-loader": "^0.5.0",
+    "jscs": "^1.8.1",
+    "jshint": "^2.5.10",
+    "mocha": "^2.0.1",
+    "power-assert": "^0.10.0"
+  }
+}
